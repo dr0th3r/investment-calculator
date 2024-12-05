@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="cs">
+
+<head>
+    <title>Investments</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css"
+        integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" crossorigin="anonymous" />
+</head>
+
+<body>
+    <header class="jumbotron text-center bg-primary">
+        <h1 class="display-1 text-light">Investments</h1>
+    </header>
+    <main class="container">
+        <p>
+            <a href="https://www.mojezdravi.cz/zdravy-zivotni-styl/bmi-index-jak-se-pocita-a-muzeme-mu-duverovat-5234.html" target="_new"></a>
+        </p>
+        <h2 class="mb-4 p-3 bg-info text-uppercase text-center text-light">
+            Investment calculator
+        </h2>
+        <div class="container">
+            <form>
+                <div class="form-group row">
+                    <label for="starting-amount" class="col-sm-3 col-form-label">Starting Amount</label>
+                    <div class="col-sm-9">
+                        <input type="number" class="form-control" name="starting-amount" id="starting-amount" value="20000" min="0" />
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label for="additional-contribution" class="col-sm-3 col-form-label">Additional Contribution</label>
+                    <div class="col-sm-9">
+                        <input type="number" class="form-control" name="additional-contribution" id="additional-contribution" value="1000" min="0" />
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label for="additional-contribution-interval" class="col-sm-3 col-form-label">Additional Contribution Interval</label>
+                    <div class="col-sm-9">
+                        <select class="form-control" name="additional-contribution-interval" id="additional-contribution-interval">
+                            <option value="anually">Anually</option>
+                            <option value="semianually">Semianually</option>
+                            <option value="quarterly">Quarterly</option>
+                            <option value="monthly">Monthly</option>
+                            <option value="semimonthly">Semimonthly</option>
+                            <option value="biweekly">Biweekly</option>
+                            <option value="weekly">Weekly</option>
+                            <option value="daily">Daily</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label for="return-rate" class="col-sm-3 col-form-label">Return Rate (%)</label>
+                    <div class="col-sm-9">
+                        <input type="number" class="form-control" name="return-rate" id="return-rate" value="6" min="0" max="100" />
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label for="compound-interval" class="col-sm-3 col-form-label">Compound interval</label>
+                    <div class="col-sm-9">
+                        <select class="form-control" name="compound-interval" id="compound-interval">
+                            <option value="anually">Anually</option>
+                            <option value="semianually">Semianually</option>
+                            <option value="quarterly">Quarterly</option>
+                            <option value="monthly">Monthly</option>
+                            <option value="semimonthly">Semimonthly</option>
+                            <option value="biweekly">Biweekly</option>
+                            <option value="weekly">Weekly</option>
+                            <option value="daily">Daily</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label for="investment-period" class="col-sm-3 col-form-label">Investment Period (years)</label>
+                    <div class="col-sm-9">
+                        <input type="number" class="form-control" name="investment-period" id="investment-period" value="10" min="0" max="100" />
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <div class="offset-sm-3 col-sm-9">
+                        <button type="button" id="calculate" class="btn btn-primary">Calculate</button>
+                    </div>
+                </div>
+            </form>
+            <hr />
+            <div id="result" class="display-4">?</div>
+        </div>
+    </main>
+    <footer class="container-fluid text-center">
+        <hr />
+        <p>&copy; 2024 - IT2</p>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js"
+        integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em" crossorigin="anonymous">
+    </script>
+    <script src="main.js"></script>
+</body>
+
+</html>
